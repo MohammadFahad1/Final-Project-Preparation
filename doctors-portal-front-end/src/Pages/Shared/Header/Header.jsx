@@ -4,11 +4,13 @@ import { Link, NavLink } from 'react-router-dom';
 const Header = () => {
     const menuItems = <>
         <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/appointment'>Appointment</NavLink></li>
         <li><NavLink to='/about'>About</NavLink></li>
+        <li><NavLink to='/login'>Login</NavLink></li>
     </>
     return (
         <div className='bg-warning'>
-            <div className="navbar max-w-[1440px] mx-auto">
+            <div className="navbar mx-auto max-w-[1200px]">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
